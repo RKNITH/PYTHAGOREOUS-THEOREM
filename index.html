@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pythagorean Theorem</h1>
+    </header>
+    <main>
+        <section class="description">
+            <h2>About Pythagorean Theorem</h2>
+            <p>The Pythagorean Theorem states that in a right-angled triangle, the square of the hypotenuse (the side
+                opposite the right angle) is equal to the sum of the squares of the other two sides. It can be written
+                as:</p>
+            <p><strong>c² = a² + b²</strong></p>
+        </section>
+        <section class="calculator">
+            <h2>Calculate Sides</h2>
+            <form id="pythagorean-form">
+                <label for="side-a">Side a (Perpendicular):</label>
+                <input type="number" id="side-a" step="any" min="0">
+
+                <label for="side-b">Side b (Base):</label>
+                <input type="number" id="side-b" step="any" min="0">
+
+                <label for="side-c">Side c (Hypotenuse):</label>
+                <input type="number" id="side-c" step="any" min="0">
+
+                <button type="button" id="calculate-btn">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </section>
+        <section class="visualization">
+            <h2>Visualization</h2>
+            <canvas id="triangle-canvas"></canvas>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
